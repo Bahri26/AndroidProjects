@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TimerActivity">
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="@+id/imageView9"
+        app:layout_constraintStart_toStartOf="@+id/imageView9"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Button
+        android:id="@+id/button_start_pause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:background="@color/yesil"
+        android:text="start"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_reset"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button_start_pause2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true"
+        android:background="@color/yesil"
+        android:text="EVET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button_reset"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_view_countdown"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <Button
+        android:id="@+id/button_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:background="@color/kirmizi"
+        android:text="reset"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_start_pause"
+        app:layout_constraintVertical_bias="0.0"
+        tools:visibility="visible" />
+
+    <Button
+        android:id="@+id/button_reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:background="@color/kirmizi"
+        android:text="HAYIR"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/button_start_pause"
+        app:layout_constraintVertical_bias="0.268"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="283dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginBottom="234dp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/timer2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Dakika"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner6"
+        app:layout_constraintStart_toStartOf="@+id/spinner6" />
+
+    <Spinner
+        android:id="@+id/spinner6"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="38dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/spinner7"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView9" />
+
+    <Spinner
+        android:id="@+id/spinner7"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="139dp"
+        android:layout_marginRight="139dp"
+        app:layout_constraintBottom_toBottomOf="@+id/spinner6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinner6"
+        app:layout_constraintTop_toTopOf="@+id/spinner6" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="248dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginLeft="64dp"
+        android:text="Zaman seç:"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_start_pause" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:text="Saniye"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/spinner7"
+        app:layout_constraintStart_toStartOf="@+id/spinner7"
+        app:layout_constraintTop_toTopOf="@+id/textView3"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gri"
+    tools:context=".UzunlukActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:scrollbarSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonuc" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="149dp"
+        android:layout_height="40dp"
+        android:scrollbarSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sonuc2" />
+
+    <Button
+        android:id="@+id/btnce"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:onClick="CE"
+        android:text="CE"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnsil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Bir"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="bir"
+        android:text="1"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/BtnIki"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Dort" />
+
+    <Button
+        android:id="@+id/btnSekiz"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="sekiz"
+        android:text="8"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnYedi"
+        app:layout_constraintTop_toBottomOf="@+id/btnce" />
+
+    <Button
+        android:id="@+id/btnbes"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="bes"
+        android:text="5"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/Dort"
+        app:layout_constraintTop_toBottomOf="@+id/btnSekiz" />
+
+    <Button
+        android:id="@+id/btnalti"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="alti"
+        android:text="6"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnbes"
+        app:layout_constraintTop_toBottomOf="@+id/btndokuz" />
+
+    <Button
+        android:id="@+id/btnYedi"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="277dp"
+        android:onClick="yedi"
+        android:text="7"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnsil"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:onClick="sil"
+        android:text="C"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnce"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btndokuz"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="dokuz"
+        android:text="9"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/btnSekiz"
+        app:layout_constraintTop_toBottomOf="@+id/btnsil" />
+
+    <Button
+        android:id="@+id/btnNokta"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+        android:onClick="nokta"
+        android:text="."
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnsifir"
+        app:layout_constraintTop_toBottomOf="@+id/Uc" />
+
+    <Button
+        android:id="@+id/Dort"
+        android:layout_width="120dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:onClick="dort"
+        android:text="4"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnYedi" />
+
+    <Button
+        android:id="@+id/btnsifir"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginLeft="136dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:onClick="sifir"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnNokta"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BtnIki" />
+
+    <Button
+        android:id="@+id/BtnIki"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:onClick="iki"
+        android:text="2"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/Uc"
+        app:layout_constraintStart_toEndOf="@+id/Bir"
+        app:layout_constraintTop_toBottomOf="@+id/btnbes" />
+
+    <Button
+        android:id="@+id/Uc"
+        android:layout_width="0dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginRight="29dp"
+        android:onClick="uc"
+        android:text="3"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/BtnIki"
+        app:layout_constraintTop_toBottomOf="@+id/btnalti" />
+
+    <TextView
+        android:id="@+id/sonuc"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|right"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="0"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sonuc2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|right"
+        android:paddingRight="20dp"
+        android:paddingBottom="5dp"
+        android:text="0"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
